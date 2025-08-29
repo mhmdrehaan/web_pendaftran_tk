@@ -2,10 +2,15 @@
 import React from "react";
 import { Clock, CheckCircle } from "lucide-react";
 
-const ProgramCard = ({ program, setCurrentSection }) => {
+const ProgramCard = ({ program = {}, setCurrentSection }) => {
+  if (!program || !program.title) {
+    return null; // tidak render kalau data kosong
+  }
+
   return (
     <div
-      className={`relative bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-10 hover:shadow-3xl transition-all duration-500 transform hover:scale-102 border-2 ${
+      className={`relative bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-10 
+      hover:shadow-2xl transition-all duration-500 transform hover:scale-105 border-2 ${
         program.color === "emerald"
           ? "border-emerald-200 hover:border-emerald-300"
           : "border-blue-200 hover:border-blue-300"
@@ -33,9 +38,7 @@ const ProgramCard = ({ program, setCurrentSection }) => {
             <Clock className="w-8 h-8 text-white" />
           </div>
           <div>
-            <h3 className="text-3xl font-bold text-gray-800">
-              {program.title}
-            </h3>
+            <h3 className="text-3xl font-bold text-gray-800">{program.title}</h3>
             <p
               className={`font-bold text-lg ${
                 program.color === "emerald" ? "text-emerald-600" : "text-blue-600"

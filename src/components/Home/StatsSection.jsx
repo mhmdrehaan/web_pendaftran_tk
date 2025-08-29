@@ -33,8 +33,8 @@ const stats = [
 
 export default function StatsSection() {
   return (
-    <section className="container mx-auto px-4">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <section className="container mx-auto px-4 mt-7 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         {stats.map((item, index) => {
           const Icon = item.icon;
           return (

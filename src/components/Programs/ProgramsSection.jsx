@@ -2,7 +2,7 @@
 import React from "react";          
 
 
-const ProgramsSection = [
+const Programs= [
   {
     title: "Playgroup",
     desc: "Program untuk anak usia dini agar terbiasa dengan lingkungan belajar sambil bermain.",
@@ -29,7 +29,7 @@ const ProgramsSection = [
   },
 ];
 
-const Programs = () => {
+const ProgramsSection = () => { 
   return (
     <section className="container mx-auto px-4 py-16">
       <div className="max-w-7xl mx-auto">

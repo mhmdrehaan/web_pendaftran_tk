@@ -1,3 +1,7 @@
+import React from "react";
+import { BookOpen, Clock, Heart, Mail, MapPin, Phone } from "lucide-react";
+
+
 const Footer = () => {
   return (
     <>

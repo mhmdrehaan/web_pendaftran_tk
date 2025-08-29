@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FileText, CheckCircle, AlertCircle, Loader2, Send } from "lucide-react";
 
+
 export default function RegistrationForm() {
   const [formData, setFormData] = useState({
     namaLengkap: "",
@@ -56,10 +57,10 @@ export default function RegistrationForm() {
   };
 
   return (
-    <div className="grid lg:grid-cols-3 gap-12">
+    <div className="grid place-items-center lg:grid-cols-3 gap-12 min-h-screen container px-4 my-16 mx-auto ">
       {/* Enhanced Registration Form */}
-      <div className="lg:col-span-2">
-        <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-10 border border-gray-200">
+      <div className="lg:col-span-2 ">
+        <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-10 border border-gray-200 ">
           <div className="flex items-center gap-4 mb-8">
             <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-2xl flex items-center justify-center">
               <FileText className="w-6 h-6 text-white" />

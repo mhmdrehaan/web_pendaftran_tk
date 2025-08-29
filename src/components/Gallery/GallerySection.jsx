@@ -1,8 +1,8 @@
 // src/components/Gallery.jsx
 import React from "react";
 
-export default function Gallery({ currentSection }) {
-  if (currentSection !== "gallery") return null;
+export default function GallerySection({ currentSection }) {
+
 
   return (
     <section className="container mx-auto px-4 py-16">

@@ -3,17 +3,32 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const kindergartenImages = [
   {
-    url: "/img/kelas.jpg",
+    url: "/assets/img/tk1.jpg",
     title: "Kelas Nyaman",
     description: "Ruang kelas yang ceria dan edukatif.",
   },
   {
-    url: "/img/bermain.jpg",
+    url: "/assets/img/tk2.jpg",
     title: "Belajar Sambil Bermain",
     description: "Metode belajar kreatif untuk anak-anak.",
   },
   {
-    url: "/img/tahfidz.jpg",
+    url: "/assets/img/tk3.jpg",
+    title: "Tahfidz Sehari-hari",
+    description: "Menghafal Al-Qur'an sejak dini.",
+  },
+  {
+    url: "/assets/img/tk4.jpg",
+    title: "Tahfidz Sehari-hari",
+    description: "Menghafal Al-Qur'an sejak dini.",
+  },
+  {
+    url: "/assets/img/tk5.jpg",
+    title: "Tahfidz Sehari-hari",
+    description: "Menghafal Al-Qur'an sejak dini.",
+  },
+  {
+    url: "/assets/img/tk6.jpg",
     title: "Tahfidz Sehari-hari",
     description: "Menghafal Al-Qur'an sejak dini.",
   },
